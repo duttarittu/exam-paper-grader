@@ -42,3 +42,15 @@
 - Installed Playwright + Chromium as a project dev dependency on the Mac
   (`npm install`) to render sample HTML papers to JPG there going
   forward, since image generation now also needs to happen locally.
+- **Step 2 done**: descriptive-question grading with partial credit.
+  Added `docs/rubrics/social_studies_timezones.md` — an explicit rubric
+  (3 criteria x 2 marks) for the Q3 "why do we have time zones?"
+  question, written as input the agent follows rather than invents.
+  Added `scripts/grade_descriptive.py`: per-criterion points +
+  justification are assigned by reading the answer against the rubric,
+  but the script sums them in code and enforces no criterion can exceed
+  its own max — the total is never a single self-reported number.
+  Tested on two answers: Rohan's strong one (reused from sample2.jpg
+  Q3) scored 6/6 (full marks), a deliberately weaker "Priya" answer
+  scored 2/6 with per-criterion reasoning shown. Confirms partial credit
+  works as intended.

@@ -10,8 +10,10 @@ Building this step by step. Each step must work before moving to the next.
 - [x] **Step 1** — Grade one MCQ-only paper, single subject, hardcoded
   answer key. Console output only. Done: `scripts/grade_mcq.py` against
   `samples/sample3_mcq.html`.
-- [ ] **Step 2** — Add descriptive-question grading for a single question,
-  single paper, against a rubric/model answer provided as input.
+- [x] **Step 2** — Add descriptive-question grading for a single question,
+  single paper, against a rubric/model answer provided as input. Done:
+  `docs/rubrics/social_studies_timezones.md` + `scripts/grade_descriptive.py`,
+  tested against a strong answer (6/6) and a weak/partial one (2/6).
 - [ ] **Step 3** — Full single paper: mixed MCQ + descriptive, one student,
   extract name/roll number, recompute total in code (never trust a
   model-reported total).
