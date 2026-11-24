@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Reenie+Beanie&display=swap" rel="stylesheet">
+<style>
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #111; padding: 40px; background: #fdfdf8; }
+  .page { transform: rotate(-1.2deg); }
+  .hand { font-family: 'Reenie Beanie', cursive; font-size: 30px; color: #16365c; }
+  .header { display: flex; justify-content: space-between; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px; }
+  .field { margin-bottom: 4px; }
+  .field .hand { font-size: 26px; }
+  .q { margin-bottom: 24px; }
+  .qhead { font-weight: bold; }
+  .marks { float: right; font-style: italic; }
+  .opt { margin-left: 24px; position: relative; }
+  .circled { position: relative; display: inline-block; }
+  .circled::after {
+    content: "";
+    position: absolute;
+    left: -8px; top: -6px; right: -10px; bottom: -4px;
+    border: 3px solid #16365c;
+    border-radius: 50% / 65%;
+    transform: rotate(4deg);
+  }
+  .struck { position: relative; display: inline-block; color: #444; }
+  .struck::after {
+    content: "";
+    position: absolute;
+    left: -4px; right: -4px; top: 48%;
+    border-top: 3px solid #16365c;
+    transform: rotate(-2deg);
+  }
+  .correction { font-family: 'Reenie Beanie', cursive; font-size: 22px; color: #16365c; margin-left: 6px; }
+  .answer-lines { margin-top: 6px; margin-left: 12px; line-height: 1.5; }
+  .faint { opacity: 0.6; }
+  .big { font-size: 34px; }
+  .small { font-size: 24px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="header">
+  <div>
+    <div class="field">Name: <span class="hand">Test Student</span></div>
+    <div class="field">Roll No: <span class="hand">07</span></div>
+  </div>
+  <div class="field">Subject: <b>Social Studies</b> &nbsp; Max Marks: <b>20</b></div>
+</div>
+
+<div class="q">
+  <div class="qhead">Q1. Who was the first President of India? <span class="marks">[2 marks]</span></div>
+  <div class="opt">(a) <span class="struck">Jawaharlal Nehru</span> <span class="correction">&larr; not this one</span></div>
+  <div class="opt">(b) <span class="circled">Dr. Rajendra Prasad</span></div>
+  <div class="opt">(c) Sardar Patel</div>
+  <div class="opt">(d) Dr. B.R. Ambedkar</div>
+</div>
+
+<div class="q">
+  <div class="qhead">Q2. The capital of France is ___. <span class="marks">[2 marks]</span></div>
+  <div class="opt">(a) Berlin</div>
+  <div class="opt">(b) Madrid</div>
+  <div class="opt">(c) Rome</div>
+  <div class="opt">(d) <span class="circled">Paris</span></div>
+</div>
+
+<div class="q">
+  <div class="qhead">Q3. Why do we have different time zones? <span class="marks">[6 marks]</span></div>
+  <div class="answer-lines hand">
+    <span class="big">becuase</span> the <span class="small faint">earth</span> is round and it spin<br>
+    on its own axis so wen one side <span class="big">facs</span> the sun it is<br>
+    day there and the oposite side is nite. so contrys<br>
+    on diff side of the globe keep diff time so that<br>
+    there clock matchs with wen the sun is up for them
+  </div>
+</div>
+
+<div class="q">
+  <div class="qhead">Q4. Explain the three organs of the Indian government. <span class="marks">[10 marks]</span></div>
+  <div class="answer-lines hand">
+    India govt has <span class="struck">two</span> <span class="correction">three</span> organs - legislature,<br>
+    executive and judiciary. legislature makes the laws,<br>
+    it is parliment, loksabha and rajyasabha. executive<br>
+    runs the contry day to day it is pm and ministers and<br>
+    all the officers under them who do the actual work.<br>
+    judiciary is the courts, supreme court high court<br>
+    and distrct court, they chek if laws are followed and<br>
+    give justice wen there is dispute. all three work<br>
+    togther but also chek each other so no one organ<br>
+    gets too powerful, this is called seperation of power.
+  </div>
+</div>
+
+</div>
+</body>
+</html>

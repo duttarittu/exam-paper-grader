@@ -17,6 +17,12 @@
   **Caveat: this only proves the pipeline works, not real handwriting
   accuracy** — the font is clean/computer-rendered. Still need real
   handwritten samples before trusting this.
+- No real handwritten samples were available yet, so added a second,
+  harder synthetic sample (`samples/sample2.jpg`) instead: rotated page,
+  a struck-through MCQ option with a correction note, a struck-through
+  word corrected inline in a descriptive answer, and misspellings
+  throughout. Re-ran Step 0 — exact match again, including both tricky
+  cases (see `docs/step0_result.md`).
 - Next: get 2-3 real handwritten samples (messy writing, crossed-out
   MCQ answers, faint pencil) and re-run the Step 0 check for a real
   accuracy number before starting Step 1 (grading logic).

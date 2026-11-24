@@ -44,9 +44,45 @@ pencil, skewed phone photos, and ambiguous circled/crossed MCQ marks.
 **Step 0 is not done until this is re-run against a few real handwritten
 samples.** Until then, treat transcription reliability as unproven.
 
+## sample2.jpg — messier synthetic sample
+
+No real handwritten samples were available yet, so this sample
+deliberately adds harder cases within the synthetic approach: slight
+page rotation, a struck-through MCQ option with a correction note
+(Q1), a struck-through word corrected inline within a descriptive
+answer (Q4: "two" → "three"), and intentional misspellings throughout
+Q3/Q4 that must not be auto-corrected.
+
+Transcribed fresh from `samples/sample2.jpg`:
+- Name: Test Student, Roll No: 07, Social Studies, Max Marks: 20
+- Q1: (a) Jawaharlal Nehru — struck through, with note "← not this one";
+  **(b) Dr. Rajendra Prasad — circled** (correctly identified as the
+  selected answer, not confused with the struck-through option)
+- Q2: **(d) Paris — circled**
+- Q3: transcribed verbatim including all misspellings (becuase, wen,
+  facs, oposite, nite, contrys, matchs)
+- Q4: correctly resolved "~~two~~ three" to **"three"** (dropped the
+  struck-through word, kept the correction), rest verbatim including
+  misspellings (parliment, contry, distrct, chek, togther, seperation)
+
+**Result: exact match against `sample2.expected.md`**, including both
+tricky cases (strike-through vs. circled-selection, and inline word
+correction).
+
+## Caveat — still not a real accuracy result
+
+Both samples are computer-rendered handwriting fonts. They now also
+exercise strike-throughs, corrections, rotation, and misspellings, which
+is a meaningfully harder test than sample1 alone — but real handwriting
+(actual pen/pencil strokes, inconsistent letter formation, real paper
+noise, phone-camera lighting/skew) remains untested. Treat this as
+"pipeline handles the known hard *shapes* of exam markup correctly",
+not as "ready for real papers".
+
 ## Next
-- Get 2-3 real handwritten samples (your own handwriting is fine,
-  anonymized) covering: MCQ with a circled option, MCQ with a crossed-out
-  + corrected option, and a messy descriptive answer.
-- Re-run this same check and record a real accuracy result here before
-  starting Step 1 (grading logic).
+- Get 2-3 real handwritten samples when available (your own handwriting
+  is fine, anonymized) and re-run this same check for a real accuracy
+  number before starting Step 1 (grading logic). Until then, synthetic
+  samples can keep covering more edge cases (e.g. double-marked MCQ,
+  very faint/small handwriting, multi-line answer with no clear
+  structure).
