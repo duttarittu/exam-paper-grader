@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Outputs / generated
+output/*.xlsx
+output/*.json
+!output/.gitkeep
+
+# OS
+.DS_Store
+
+# Env
+.env
