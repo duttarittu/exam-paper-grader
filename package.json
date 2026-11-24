@@ -1,0 +1,26 @@
+{
+  "name": "exam-paper-grader",
+  "version": "1.0.0",
+  "description": "An agent that reviews handwritten exam papers (PDF or JPG) containing MCQ and descriptive questions, assigns marks, and records each student's score to an Excel sheet.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duttarittu/exam-paper-grader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duttarittu/exam-paper-grader/issues"
+  },
+  "homepage": "https://github.com/duttarittu/exam-paper-grader#readme",
+  "devDependencies": {
+    "playwright": "^1.65.1"
+  }
+}

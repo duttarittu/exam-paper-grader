@@ -4,6 +4,9 @@ __pycache__/
 .venv/
 venv/
 
+# Node
+node_modules/
+
 # Outputs / generated
 output/*.xlsx
 output/*.json
@@ -11,6 +14,10 @@ output/*.json
 
 # OS
 .DS_Store
+
+# Editor
+.idea/
+.vscode/
 
 # Env
 .env

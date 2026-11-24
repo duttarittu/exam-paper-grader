@@ -2,11 +2,14 @@
 
 Building this step by step. Each step must work before moving to the next.
 
-- [ ] **Step 0** — Prove handwriting transcription accuracy on real sample
-  papers before writing any grading logic. No agent yet — just manual
-  transcription checks.
-- [ ] **Step 1** — Grade one MCQ-only paper, single subject, hardcoded
-  answer key. Console output only.
+- [x] **Step 0** — Prove handwriting transcription accuracy on sample
+  papers before writing any grading logic. Done with synthetic samples
+  only (see `docs/step0_result.md`); **real handwriting accuracy is
+  still unproven** and should be re-checked once real samples are
+  available.
+- [x] **Step 1** — Grade one MCQ-only paper, single subject, hardcoded
+  answer key. Console output only. Done: `scripts/grade_mcq.py` against
+  `samples/sample3_mcq.html`.
 - [ ] **Step 2** — Add descriptive-question grading for a single question,
   single paper, against a rubric/model answer provided as input.
 - [ ] **Step 3** — Full single paper: mixed MCQ + descriptive, one student,

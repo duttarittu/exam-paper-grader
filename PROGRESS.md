@@ -23,6 +23,22 @@
   word corrected inline in a descriptive answer, and misspellings
   throughout. Re-ran Step 0 — exact match again, including both tricky
   cases (see `docs/step0_result.md`).
-- Next: get 2-3 real handwritten samples (messy writing, crossed-out
-  MCQ answers, faint pencil) and re-run the Step 0 check for a real
-  accuracy number before starting Step 1 (grading logic).
+- Real handwritten samples still not available; moved on to Step 1
+  using synthetic samples, with the "real accuracy unproven" caveat
+  staying open.
+- **Switched workflow**: now editing, running, committing and pushing
+  directly on the user's Mac (`/Users/rittusmac/Projects/exam-paper-grader`)
+  via Remote Control, instead of a separate cloud copy + `git pull`.
+  Set a repo-local git identity (`duttarittu <duttarittu@gmail.com>`)
+  there so commits work.
+- **Step 1 done**: added `samples/sample3_mcq.html` (MCQ-only paper,
+  Mathematics, 5 questions x 2 marks = 10) and
+  `scripts/grade_mcq.py` — a plain Python grading script with a
+  hardcoded answer key and hardcoded "transcribed" student answers.
+  Marks are computed entirely in code (never by the model): per-question
+  correct/wrong + marks, and a total recomputed by summing, never taken
+  as a single reported value. Verified: 4/5 correct, Q5 wrong (selected
+  3.16, correct 3.14), **total 8/10**, printed to console.
+- Installed Playwright + Chromium as a project dev dependency on the Mac
+  (`npm install`) to render sample HTML papers to JPG there going
+  forward, since image generation now also needs to happen locally.
